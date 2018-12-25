@@ -1,41 +1,51 @@
+#include <string>
 #include <iostream>
 
 int main() {
-  
+
   double weight;
   int num;
-  char planet;
-  
-  std::cout << "What is your earth weight?\n";
+  std::string planet;
+
+  std::cout << "What is your earth weight (kg)?\n";
   std::cin >> weight;
+  std::cout << "Here are a list of planets and their associated numbers:\n";
+  std::cout << "1 Venus 	2 Mars		3 Jupiter\n"
+		"4 Saturn	5 Uranus 	6 Neptune\n";
   std::cout << "What planet do you want to fight on?\n";
   std::cin >> num;
 	switch(num) {
     case 1 : {
       weight = 0.7 * weight;
       planet = "Venus";
+	break;
     }
     case 2 : {
       weight = 0.39 * weight;
       planet = "Mars";
+	break;
     }
     case 3 : {
       weight = 2.65 * weight;
       planet = "Jupiter";
+	break;
     }
     case 4 : {
       weight = 1.17 * weight;
       planet = "Saturn";
+	break;
     }
     case 5 : {
       weight = 1.05 * weight;
       planet = "Uranus";
+	break;
     }
     case 6 : {
       weight = 1.23 * weight;
       planet = "Neptune";
+	break;
     }
   }
-  std::cout << "Your weight on " << planet << " is " << weight << ".\n"
-  
+  std::cout << "Your weight on " << planet << " is " << weight << ".\n";
+
 }
