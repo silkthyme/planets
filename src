@@ -46,6 +46,6 @@ int main() {
 	break;
     }
   }
-  std::cout << "Your weight on " << planet << " is " << weight << ".\n";
+  std::cout << "Your weight on " << planet << " is " << weight << " kg.\n";
 
 }
